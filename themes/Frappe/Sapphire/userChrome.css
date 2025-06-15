@@ -1,4 +1,4 @@
-/* Catppuccin Frappe Sapphire userChrome.css*/
+/* Catppuccin Frappe Sapphire userChrome.css */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -7,7 +7,7 @@
     --zen-colors-secondary: #414559 !important;
     --zen-colors-tertiary: #292c3c !important;
     --zen-colors-border: #85c1dc !important;
-    --toolbarbutton-icon-fill: #85c1dc !important;
+    --toolbarbutton-icon-fill: #c6d0f5 !important;
     --lwt-text-color: #c6d0f5 !important;
     --toolbar-field-color: #c6d0f5 !important;
     --tab-selected-textcolor: rgb(166, 201, 232) !important;
@@ -24,22 +24,45 @@
     --zen-themed-toolbar-bg: #292c3c !important;
     --zen-main-browser-background: #292c3c !important;
     --toolbox-bgcolor-inactive: #292c3c !important;
+    --in-content-button-text-color: #c6d0f5 !important;
   }
 
-  #permissions-granted-icon{
+  #browser {
+    background-color: #292c3c !important;
+  }
+
+  #zen-appcontent-navbar-container {
+    background-color: #292c3c !important;
+  }
+
+  #titlebar {
+    background-color: #292c3c !important;
+  }
+
+  .browser-titlebar {
+    border: 2px solid #303446 !important;
+    border-radius: 6px;
+    padding: 6px 0px 6px 0px !important;
+  }
+
+  #sidebar-box {
+    background-color: #303446 !important;
+  }
+
+  #sidebar-search-container {
+    background-color: #303446 !important;
+  }
+
+  menuitem {
+    color: #c6d0f5 !important;
+  }
+
+  #permissions-granted-icon {
     color: #292c3c !important;
   }
 
   .sidebar-placesTree {
     background-color: #303446 !important;
-  }
-
-  #zen-workspaces-button {
-    background-color: #303446 !important;
-  }
-
-  #TabsToolbar {
-    background-color: #292c3c !important;
   }
 
   #urlbar-background {

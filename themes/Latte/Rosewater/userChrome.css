@@ -1,4 +1,4 @@
-/* Catppuccin Latte Rosewater userChrome.css*/
+/* Catppuccin Latte Rosewater userChrome.css */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -7,7 +7,7 @@
     --zen-colors-secondary: #ccd0da !important;
     --zen-colors-tertiary: #e6e9ef !important;
     --zen-colors-border: #dc8a78 !important;
-    --toolbarbutton-icon-fill: #dc8a78 !important;
+    --toolbarbutton-icon-fill: #4c4f69 !important;
     --lwt-text-color: #4c4f69 !important;
     --toolbar-field-color: #4c4f69 !important;
     --tab-selected-textcolor: rgb(148, 108, 112) !important;
@@ -24,22 +24,45 @@
     --zen-themed-toolbar-bg: #e6e9ef !important;
     --zen-main-browser-background: #e6e9ef !important;
     --toolbox-bgcolor-inactive: #e6e9ef !important;
+    --in-content-button-text-color: #4c4f69 !important;
   }
 
-  #permissions-granted-icon{
+  #browser {
+    background-color: #e6e9ef !important;
+  }
+
+  #zen-appcontent-navbar-container {
+    background-color: #e6e9ef !important;
+  }
+
+  #titlebar {
+    background-color: #e6e9ef !important;
+  }
+
+  .browser-titlebar {
+    border: 2px solid #eff1f5 !important;
+    border-radius: 6px;
+    padding: 6px 0px 6px 0px !important;
+  }
+
+  #sidebar-box {
+    background-color: #eff1f5 !important;
+  }
+
+  #sidebar-search-container {
+    background-color: #eff1f5 !important;
+  }
+
+  menuitem {
+    color: #4c4f69 !important;
+  }
+
+  #permissions-granted-icon {
     color: #e6e9ef !important;
   }
 
   .sidebar-placesTree {
     background-color: #eff1f5 !important;
-  }
-
-  #zen-workspaces-button {
-    background-color: #eff1f5 !important;
-  }
-
-  #TabsToolbar {
-    background-color: #e6e9ef !important;
   }
 
   #urlbar-background {

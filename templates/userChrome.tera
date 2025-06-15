@@ -8,7 +8,7 @@ whiskers:
 ---
 {%- set palette = flavor.colors -%}
 
-/* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userChrome.css*/
+/* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userChrome.css */
 
 @media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
   :root {
@@ -17,7 +17,7 @@ whiskers:
     --zen-colors-secondary: #{{ surface0.hex }} !important;
     --zen-colors-tertiary: #{{ mantle.hex }} !important;
     --zen-colors-border: #{{ palette[accent].hex }} !important;
-    --toolbarbutton-icon-fill: #{{ palette[accent].hex }} !important;
+    --toolbarbutton-icon-fill: #{{ text.hex }} !important;
     --lwt-text-color: #{{ text.hex }} !important;
     --toolbar-field-color: #{{ text.hex }} !important;
     --tab-selected-textcolor: {{ palette[accent] | mix(color=text, amount=0.5) | css_rgb}} !important;
@@ -34,22 +34,45 @@ whiskers:
     --zen-themed-toolbar-bg: #{{ mantle.hex }} !important;
     --zen-main-browser-background: #{{ mantle.hex }} !important;
     --toolbox-bgcolor-inactive: #{{ mantle.hex }} !important;
+    --in-content-button-text-color: #{{ text.hex }} !important;
   }
 
-  #permissions-granted-icon{
+  #browser {
+    background-color: #{{ mantle.hex }} !important;
+  }
+
+  #zen-appcontent-navbar-container {
+    background-color: #{{ mantle.hex }} !important;
+  }
+
+  #titlebar {
+    background-color: #{{ mantle.hex }} !important;
+  }
+
+  .browser-titlebar {
+    border: 2px solid #{{ base.hex }} !important;
+    border-radius: 6px;
+    padding: 6px 0px 6px 0px !important;
+  }
+
+  #sidebar-box {
+    background-color: #{{ base.hex }} !important;
+  }
+
+  #sidebar-search-container {
+    background-color: #{{ base.hex }} !important;
+  }
+
+  menuitem {
+    color: #{{ text.hex }} !important;
+  }
+
+  #permissions-granted-icon {
     color: #{{ mantle.hex }} !important;
   }
 
   .sidebar-placesTree {
     background-color: #{{ base.hex }} !important;
-  }
-
-  #zen-workspaces-button {
-    background-color: #{{ base.hex }} !important;
-  }
-
-  #TabsToolbar {
-    background-color: #{{ mantle.hex }} !important;
   }
 
   #urlbar-background {

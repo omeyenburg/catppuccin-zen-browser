@@ -1,4 +1,4 @@
-/* Catppuccin Mocha Rosewater userChrome.css*/
+/* Catppuccin Mocha Rosewater userChrome.css */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -7,7 +7,7 @@
     --zen-colors-secondary: #313244 !important;
     --zen-colors-tertiary: #181825 !important;
     --zen-colors-border: #f5e0dc !important;
-    --toolbarbutton-icon-fill: #f5e0dc !important;
+    --toolbarbutton-icon-fill: #cdd6f4 !important;
     --lwt-text-color: #cdd6f4 !important;
     --toolbar-field-color: #cdd6f4 !important;
     --tab-selected-textcolor: rgb(225, 219, 232) !important;
@@ -24,22 +24,45 @@
     --zen-themed-toolbar-bg: #181825 !important;
     --zen-main-browser-background: #181825 !important;
     --toolbox-bgcolor-inactive: #181825 !important;
+    --in-content-button-text-color: #cdd6f4 !important;
   }
 
-  #permissions-granted-icon{
+  #browser {
+    background-color: #181825 !important;
+  }
+
+  #zen-appcontent-navbar-container {
+    background-color: #181825 !important;
+  }
+
+  #titlebar {
+    background-color: #181825 !important;
+  }
+
+  .browser-titlebar {
+    border: 2px solid #1e1e2e !important;
+    border-radius: 6px;
+    padding: 6px 0px 6px 0px !important;
+  }
+
+  #sidebar-box {
+    background-color: #1e1e2e !important;
+  }
+
+  #sidebar-search-container {
+    background-color: #1e1e2e !important;
+  }
+
+  menuitem {
+    color: #cdd6f4 !important;
+  }
+
+  #permissions-granted-icon {
     color: #181825 !important;
   }
 
   .sidebar-placesTree {
     background-color: #1e1e2e !important;
-  }
-
-  #zen-workspaces-button {
-    background-color: #1e1e2e !important;
-  }
-
-  #TabsToolbar {
-    background-color: #181825 !important;
   }
 
   #urlbar-background {
